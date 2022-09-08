@@ -37,6 +37,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.num2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnAbrir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblResultado
@@ -116,11 +117,22 @@
             this.label1.Size = new System.Drawing.Size(0, 15);
             this.label1.TabIndex = 4;
             // 
+            // btnAbrir
+            // 
+            this.btnAbrir.Location = new System.Drawing.Point(265, 308);
+            this.btnAbrir.Name = "btnAbrir";
+            this.btnAbrir.Size = new System.Drawing.Size(107, 41);
+            this.btnAbrir.TabIndex = 5;
+            this.btnAbrir.Text = "Abrir ventana";
+            this.btnAbrir.UseVisualStyleBackColor = true;
+            this.btnAbrir.Click += new System.EventHandler(this.btnAbrir_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 361);
+            this.Controls.Add(this.btnAbrir);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -148,5 +160,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox num2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnAbrir;
     }
 }

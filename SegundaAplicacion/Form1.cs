@@ -12,6 +12,7 @@ namespace SegundaAplicacion
 {
     public partial class Form1 : Form
     {
+        VentanaPrincipal ventana;
         public Form1()
         {
             InitializeComponent();
@@ -30,6 +31,16 @@ namespace SegundaAplicacion
         private void algun_evento(object sender, EventArgs e)
         {
             txtCorreo.Text = "Estas listo para sumar?";
+        }
+
+        private void btnAbrir_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            //Abrir segundo formulario
+            if(ventana == null)
+                ventana = new VentanaPrincipal(this);
+            ventana.Show();
+            //btnAbrir.Enabled = false;
         }
     }
 }
